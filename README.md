@@ -1,9 +1,9 @@
-# README-generator //this  will be title input in terminal
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) //this will also be decided in terminal
+# README-generator
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) MIT
 
 ## Description
 
-//This is the description from user input
+undefined
 
 ## Table of Contents
 
@@ -23,21 +23,21 @@
 
 To install necessary dependencies for this app, run the following command:
 
-//This is where 'npm i' is inserted from input.
+npm i
 
 ## Usage
 
-//This is where input about how to use this repo is inserted.
+Use this repository
 
 ## Contributing
 
-//This is where the input about how to contribute is inserted.
+Via email and github
 
 ## Tests
 
 To run tests, run the following command: 
 
-//This is where 'npm test' is inserted from input.
+npm test
 
 ## Questions
 
