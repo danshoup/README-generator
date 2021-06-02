@@ -1,5 +1,5 @@
 # README-generator //this  will be title input in terminal
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) //this will also be decided in terminal
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -42,3 +42,6 @@ To run tests, run the following command:
 ## Questions
 
 If you have any quesitons about this repository, open an issue or contact me directly at [dan.c.shoup@gmail.com](mailto:dan.c.shoup@gmail.com). You can find more of my work on my GitHub page at: [danshoup](https://github.com/danshoup).
+
+## License
+

@@ -3,19 +3,52 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// Construct for license parts
+// Write the template literal for including the user input data in the README file.
+// const generateReadMe = (answers) =>
+// `# ${answers.title}
+// ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ${answers.license}
 
-function License (name, badge, link) {
-    this.name = name;
-    this.badge = badge;
-    this.link = link;
-  }
-  
-  const mit = new License ('MIT', 'https://img.shields.io/badge/License-MIT-yellow.svg', 'https://img.shields.io/badge/License-MIT-yellow.svg');
-  const apache = new License ('APACHE 2.0', 'https://img.shields.io/badge/License-Apache%202.0-blue.svg', 'https://opensource.org/licenses/Apache-2.0');
-  const gpl = new License ('GPL 3.0', 'https://img.shields.io/badge/License-GPLv3-blue.svg', 'https://www.gnu.org/licenses/gpl-3.0', 'https://www.gnu.org/licenses/gpl-3.0');
-  const bsd = new License ('BSD 3', 'https://img.shields.io/badge/License-BSD%203--Clause-blue.svg', 'https://opensource.org/licenses/BSD-3-Clause');
+// ## Description
 
+// ${answers.description}
+
+// ## Table of Contents
+
+// * [Installation](#installation)
+
+// * [Usage](#usage)
+
+// * [License](#license)
+
+// * [Contributing](#contributing)
+
+// * [Tests](#tests)
+
+// * [Questions](#questions)
+
+// ## Installation
+
+// To install necessary dependencies for this app, run the following command:
+
+// ${answers.install}
+
+// ## Usage
+
+// ${answers.usage}
+
+// ## Contributing
+
+// ${answers.contribute}
+
+// ## Tests
+
+// To run tests, run the following command: 
+
+// ${answers.tests}
+
+// ## Questions
+
+// If you have any quesitons about this repository, open an issue or contact me directly at [${answers.email}](mailto:${answers.email}). You can find more of my work on my GitHub page at: [${answers.github}](https://github.com/${answers.github}).`;
 
 // Build the array of inquirer prompts that gather user input info.
 
@@ -44,10 +77,10 @@ inquirer
         {
             type: 'list',
             choices: [
-                mit.name,
-                apache.name,
-                gpl.name,
-                bsd.name,
+                "MIT",
+                "APACHE 2.0",
+                "GPL 3.0",
+                "BSD 3",
                 "NONE"
             ],
             name: 'license',
