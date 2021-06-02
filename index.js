@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// Construct for license parts
+// Constructor for license parts
 
 function License (name, badge, link) {
     this.name = name;
