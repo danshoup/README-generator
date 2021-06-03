@@ -26,31 +26,31 @@ const bsd = new License (
   'https://opensource.org/licenses/BSD-3-Clause'
   );
 
+// const badgeChoice = answers.license;
+// switch (badgeChoice) {
+//   case 'MIT':
+//     badgeChoice = mit.badge;
+//     console.log(badgeChoice);
+//     break;
+//   case 'APACHE 2.0':
+//     badgeChoice = apache.badge;
+//     console.log(badgeChoice);
+//     break;
+//   case 'GPL 3.0':
+//     badgeChoice = gpl.badge;
+//     break;
+//   case 'BSD 3':
+//     badgeChoice = bsd.badge;
+//     break;
+//   default: 
+//     badgeChoice = "";
+// };
 
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  // const badgeChoice = `${answers.license}`;
-  // switch (badgeChoice) {
-  //   case 'MIT':
-  //     badgeChoice = mit.badge;
-  //     console.log(badgeChoice);
-  //     break;
-  //   case 'APACHE 2.0':
-  //     badgeChoice = apache.badge;
-  //     console.log(badgeChoice);
-  //     break;
-  //   case 'GPL 3.0':
-  //     badgeChoice = gpl.badge;
-  //     break;
-  //   case 'BSD 3':
-  //     badgeChoice = bsd.badge;
-  //     break;
-  //   default: 
-  //     badgeChoice = "";
-  // };
   
 }
 // TODO: Create a function that returns the license link
