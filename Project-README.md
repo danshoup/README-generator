@@ -8,12 +8,12 @@ This is the ninth assigment for MSU Coding Bootcamp; to create a command-line ap
 
 ### Live Links
 - [Daniel Shoup's README Repisitory](https://github.com/danshoup/README-generator)
-- [Daniel Shoup's README Demo](https://github.com/danshoup)
+- [Daniel Shoup's README Demo](https://drive.google.com/file/d/110uZiSavUWEpDp1Wkq5yAMXxqCFsosck/view)
 
 
 ### README Generator Screenshot
 
-![Application Screen Shot](./images/weatherdash.png)
+![Application Screen Shot](./images/README-Generator_Demo.gif)
 
 
 ### Acceptance Criteria
