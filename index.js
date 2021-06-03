@@ -2,21 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-
-// Constructor for license parts
-
-function License (name, badge, link) {
-    this.name = name;
-    this.badge = badge;
-    this.link = link;
-  }
   
-  const mit = new License ('MIT', 'https://img.shields.io/badge/License-MIT-yellow.svg', 'https://img.shields.io/badge/License-MIT-yellow.svg');
-  const apache = new License ('APACHE 2.0', 'https://img.shields.io/badge/License-Apache%202.0-blue.svg', 'https://opensource.org/licenses/Apache-2.0');
-  const gpl = new License ('GPL 3.0', 'https://img.shields.io/badge/License-GPLv3-blue.svg', 'https://www.gnu.org/licenses/gpl-3.0', 'https://www.gnu.org/licenses/gpl-3.0');
-  const bsd = new License ('BSD 3', 'https://img.shields.io/badge/License-BSD%203--Clause-blue.svg', 'https://opensource.org/licenses/BSD-3-Clause');
-
-
 // Build the array of inquirer prompts that gather user input info.
 
 inquirer
@@ -38,16 +24,16 @@ inquirer
         },
         {
             type: 'input',
-            name: 'title',
+            name: 'description',
             message: 'Write a short description of your project:',
         },
         {
             type: 'list',
             choices: [
-                mit.name,
-                apache.name,
-                gpl.name,
-                bsd.name,
+                "MIT",
+                "APACHE 2.0",
+                "GPL 3.0",
+                "BSD 3",
                 "NONE"
             ],
             name: 'license',
@@ -86,12 +72,3 @@ inquirer
         );
     });
 
-
-
-
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();

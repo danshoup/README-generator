@@ -1,10 +1,21 @@
 
+function License (name, badge, link) {
+  this.name = name;
+  this.badge = badge;
+  this.link = link;
+}
+
+const mit = new License ('MIT', 'https://img.shields.io/badge/License-MIT-yellow.svg', 'https://img.shields.io/badge/License-MIT-yellow.svg');
+const apache = new License ('APACHE 2.0', 'https://img.shields.io/badge/License-Apache%202.0-blue.svg', 'https://opensource.org/licenses/Apache-2.0');
+const gpl = new License ('GPL 3.0', 'https://img.shields.io/badge/License-GPLv3-blue.svg', 'https://www.gnu.org/licenses/gpl-3.0', 'https://www.gnu.org/licenses/gpl-3.0');
+const bsd = new License ('BSD 3', 'https://img.shields.io/badge/License-BSD%203--Clause-blue.svg', 'https://opensource.org/licenses/BSD-3-Clause');
+
+
+
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  
-
   
 }
 
@@ -73,9 +84,4 @@ function generateMarkdown(answers) {
 `;
 }
 
-module.exports = {
-  generateMarkdown, 
-  renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
-};
+module.exports = generateMarkdown;
