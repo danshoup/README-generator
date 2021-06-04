@@ -26,32 +26,31 @@ const bsd = new License (
   'https://opensource.org/licenses/BSD-3-Clause'
   );
 
-// const badgeChoice = answers.license;
-// switch (badgeChoice) {
-//   case 'MIT':
-//     badgeChoice = mit.badge;
-//     console.log(badgeChoice);
-//     break;
-//   case 'APACHE 2.0':
-//     badgeChoice = apache.badge;
-//     console.log(badgeChoice);
-//     break;
-//   case 'GPL 3.0':
-//     badgeChoice = gpl.badge;
-//     break;
-//   case 'BSD 3':
-//     badgeChoice = bsd.badge;
-//     break;
-//   default: 
-//     badgeChoice = "";
-// };
 
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  
+  const badgeChoice = (`${answers.license}`);
+  switch (badgeChoice) {
+    case 'MIT':
+      badgeChoice = mit.badge;
+      console.log(badgeChoice);
+      break;
+    case 'APACHE 2.0':
+      badgeChoice = apache.badge;
+      console.log(badgeChoice);
+      break;
+    case 'GPL 3.0':
+      badgeChoice = gpl.badge;
+      break;
+    case 'BSD 3':
+      badgeChoice = bsd.badge;
+      break;
+    default: 
+      badgeChoice = "";
+  };
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -110,11 +109,11 @@ function generateMarkdown(answers) {
   
   ## Questions
   
-  If you have any quesitons about this repository, open an issue or contact me directly at [${answers.email}](mailto:${answers.email}). You can find more of my work on my GitHub page at: [${answers.github}](https://github.com/${answers.github}).
+  If you have any quesitons about this repository, open an issue, or contact me directly at [${answers.email}](mailto:${answers.email}). You can find more of my work on my GitHub page at: [${answers.github}](https://github.com/${answers.github}).
 
   ## License
 
-  Usage of this application is covered under the ${answers.license} license. 
+  Usage of this application is covered under the **${answers.license}** license. 
 
   [Click here to read more about the ${answers.license}](${mit.link})
 `;

@@ -1,9 +1,9 @@
-# README-generator
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
+# README Generator
+  ![License: APACHE 2.0](https://img.shields.io/badge/License-MIT-yellow.svg)  
   
   ## Description
   
-  Command-line readme generator application.
+  Using a command-line prompt, the user can create a professional looking README file by answering a few questions.
   
   ## Table of Contents
   
@@ -27,11 +27,11 @@
   
   ## Usage
   
-  Install dependencies, then run app by running 'node index'.
+  To use this repository, run the 'npm i' command to install dependencies, and then run 'node index' to begin creating the README file by answering the command-line prompts.
   
   ## Contributing
   
-  You can contribute by contacting via email or GitHub.
+  For any questions regarding contributing the the project, you can contact via email or GitHub profile.
   
   ## Tests
   
@@ -45,6 +45,6 @@
 
   ## License
 
-  Usage of this application is covered under the MIT license. 
+  Usage of this application is covered under the APACHE 2.0 license. 
 
-  [Click here to read more about the MIT](https://opensource.org/licenses/MIT)
+  [Click here to read more about the APACHE 2.0](https://opensource.org/licenses/MIT)
