@@ -44,23 +44,6 @@ const bsd = new License (
 
 
 
-
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-}
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-
-}
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   var today = new Date();
@@ -81,7 +64,7 @@ function generateMarkdown(answers) {
       badgeChoice = bsd.badge;
       break;
     default: 
-      badgeChoice = "";
+      break;
 
   };
 
@@ -100,7 +83,7 @@ function generateMarkdown(answers) {
       badgeLink = bsd.link;
       break;
     default: 
-      badgeLink = "";
+      break;
 
   };
 
@@ -119,7 +102,7 @@ function generateMarkdown(answers) {
       licenseLink = bsd.text;
       break;
     default: 
-      licenseLink = "";
+      break;
 
   };
 
@@ -151,9 +134,9 @@ function generateMarkdown(answers) {
   ## Installation
   
   To install necessary dependencies for this app, run the following command:
-  
+  ~~~
   ${answers.install}
-  
+  ~~~
   ## Usage
   
   ${answers.usage}
@@ -165,9 +148,9 @@ function generateMarkdown(answers) {
   ## Tests
   
   To run tests, run the following command: 
-  
+  ~~~
   ${answers.tests}
-  
+  ~~~
   ## Questions
   
   If you have any quesitons about this repository, open an issue, or contact me directly at [${answers.email}](mailto:${answers.email}). You can find more of my work on my GitHub page at: [${answers.github}](https://github.com/${answers.github}).

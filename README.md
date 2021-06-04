@@ -25,9 +25,9 @@
   ## Installation
   
   To install necessary dependencies for this app, run the following command:
-  
+  ~~~
   npm i
-  
+  ~~~
   ## Usage
   
   To use this repository, run the 'npm i' command to install dependencies, and then run 'node index' to begin creating the README file by answering the command-line prompts.
@@ -39,9 +39,9 @@
   ## Tests
   
   To run tests, run the following command: 
-  
+  ~~~
   npm test
-  
+  ~~~
   ## Questions
   
   If you have any quesitons about this repository, open an issue, or contact me directly at [dan.c.shoup@gmail.com](mailto:dan.c.shoup@gmail.com). You can find more of my work on my GitHub page at: [danshoup](https://github.com/danshoup).
