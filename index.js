@@ -10,6 +10,11 @@ function init() {
         .prompt([
             {
                 type: 'input',
+                name: 'user',
+                message: "What is your first and last name?"
+            },
+            {
+                type: 'input',
                 name: 'github',
                 message: 'What is your GitHub username?',
             },
