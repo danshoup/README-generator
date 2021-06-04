@@ -13,7 +13,7 @@ This is the ninth assigment for MSU Coding Bootcamp; to create a command-line ap
 
 ### README Generator Screenshot
 
-![Application Screen Shot](./images/README-Generator_Demo.gif)
+![Application Screen Shot](./images/README-Generator_Demo.gif.icloud)
 
 
 ### Acceptance Criteria
