@@ -32,25 +32,6 @@ const bsd = new License (
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  const badgeChoice = (`${answers.license}`);
-  switch (badgeChoice) {
-    case 'MIT':
-      badgeChoice = mit.badge;
-      console.log(badgeChoice);
-      break;
-    case 'APACHE 2.0':
-      badgeChoice = apache.badge;
-      console.log(badgeChoice);
-      break;
-    case 'GPL 3.0':
-      badgeChoice = gpl.badge;
-      break;
-    case 'BSD 3':
-      badgeChoice = bsd.badge;
-      break;
-    default: 
-      badgeChoice = "";
-  };
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -66,9 +47,53 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
+
+  let badgeChoice = (`${answers.license}`);
+  switch (badgeChoice) {
+    case 'MIT':
+      badgeChoice = mit.badge;
+      break;
+    case 'APACHE 2.0':
+      badgeChoice = apache.badge;
+      break;
+    case 'GPL 3.0':
+      badgeChoice = gpl.badge;
+      break;
+    case 'BSD 3':
+      badgeChoice = bsd.badge;
+      break;
+    default: 
+      badgeChoice = "";
+      
+  };
+
+  let badgeLink = (`${answers.license}`);
+  switch (badgeLink) {
+    case 'MIT':
+      badgeLink = mit.link;
+      break;
+    case 'APACHE 2.0':
+      badgeLink = apache.link;
+      break;
+    case 'GPL 3.0':
+      badgeLink = gpl.link;
+      break;
+    case 'BSD 3':
+      badgeLink = bsd.link;
+      break;
+    default: 
+      badgeLink = "";
+
+  };
+
+
+
   return `# ${answers.title}
-  ![License: ${answers.license}](${mit.badge})  
-  
+
+  ![License: ${answers.license}](${badgeChoice})  
+
+  [Link to the ${answers.license} License OpenSource Documentation](${badgeLink})
+
   ## Description
   
   ${answers.description}
@@ -115,7 +140,7 @@ function generateMarkdown(answers) {
 
   Usage of this application is covered under the **${answers.license}** license. 
 
-  [Click here to read more about the ${answers.license}](${mit.link})
+  [Click here to read more about the ${answers.license} license.](${badgeLink})
 `;
 }
 
